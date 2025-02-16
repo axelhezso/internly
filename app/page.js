@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 export default function Home() {
   const [search, setSearch] = useState('');
@@ -12,10 +11,10 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#1E3D34] text-white">
-      <header className="flex items-center justify-between bg-[#1E3D34] p-4 shadow-md">
+    <div className="min-h-screen bg-[#6AC6AC] text-white">
+      <header className="flex items-center justify-between bg-[#6AC6AC] p-4 shadow-md">
         <div className="flex items-center space-x-4">
-          <Image src="/logo.png" alt="Internly Logo" width={150} height={50} />
+          <h1 className="text-2xl font-bold text-[#6AC6AC] bg-white px-4 py-2 rounded-md">Internly</h1>
           <input
             type="text"
             placeholder="Sök jobb, yrken eller företag..."
@@ -28,7 +27,7 @@ export default function Home() {
             placeholder="Plats"
             className="border p-2 rounded-md text-black w-40"
           />
-          <button className="bg-[#A3C1A3] text-black px-4 py-2 rounded-md">Sök</button>
+          <button className="bg-white text-black px-4 py-2 rounded-md">Sök</button>
         </div>
       </header>
 
