@@ -1,6 +1,6 @@
 "use client";
 
-iimport { useState } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const [search, setSearch] = useState('');
